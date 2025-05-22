@@ -7,18 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+  <!-- 网页标题与图片 -->
   <p>This is my first webpage!</p>
-
-  <!-- 显示图片 -->
   <img src="Romy.jpeg" width="300" alt="Romy's photo" />
 
-  <!-- 添加表单 -->
-  <h2>Fill in your name:</h2>
-  <form>
+  <!-- 表单部分 -->
+  <h2>Please fill in the form:</h2>
+  <form action="#" method="post">
     First name: <input type="text" name="firstname"><br><br>
     Last name: <input type="text" name="lastname"><br><br>
+    Password: <input type="password" name="pw"><br><br>
+    Birthdate: <input type="date" name="d"><br><br>
+    Email: <input type="email" name="em"><br><br>
     <input type="submit" value="Submit">
   </form>
 
+  <!-- 视频嵌入部分 -->
+  <h2>Watch this video:</h2>
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/f8aT9oRp95A"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
