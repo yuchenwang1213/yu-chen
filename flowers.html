@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Favorite Flowers</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f5f5f5;
-    }
-    img {
-      width: 300px;
-      margin: 20px auto;
-      display: block;
-    }
-    .section {
-      background: white;
-      margin: 20px auto;
-      padding: 20px;
-      width: 80%;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Favorite Flowers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .flower-card {
+            background-color: white;
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
+    <h1>My Favorite Flowers</h1>
 
-  <h1>My Favorite Flowers</h1>
+    <div class="flower-card">
+        <h2>Tulip（郁金香）</h2>
+        <img src="tulip.jpeg" alt="Tulip photo">
+        <p>
+            Tulips are bright, beautiful, and come in many colors. They are one of the most popular spring flowers.
+        </p>
+        <ul>
+            <li>Symbol of love and rebirth</li>
+            <li>Popular in Netherlands</li>
+            <li>Come in over 3000 varieties</li>
+        </ul>
+    </div>
 
-  <div class="section">
-    <h2>Tulip（郁金香）</h2>
-    <img src="tulip.jpg" alt="Tulip photo">
-    <p>Tulips are bright, beautiful, and come in many colors. They are one of the most popular spring flowers.</p>
-    <ul>
-      <li>Symbol of love and rebirth</li>
-      <li>Popular in Netherlands</li>
-      <li>Come in over 3000 varieties</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Rosemary（迷迭香）</h2>
-    <img src="rosemary.jpg" alt="Rosemary photo">
-    <p>Rosemary is a fragrant herb with needle-like leaves. It is used in cooking and has a fresh, woodsy scent.</p>
-    <ul>
-      <li>Used in Mediterranean cooking</li>
-      <li>Symbol of memory and loyalty</li>
-      <li>Can be grown in pots or gardens</li>
-    </ul>
-  </div>
-
+    <div class="flower-card">
+        <h2>Rosemary（迷迭香）</h2>
+        <img src="rosemary.jpeg" alt="Rosemary photo">
+        <p>
+            Rosemary is not only a beautiful plant with purple-blue flowers, but also a useful herb in cooking and medicine.
+        </p>
+        <ul>
+            <li>Symbol of remembrance</li>
+            <li>Fragrant and evergreen</li>
+            <li>Used in tea, cooking, and oil</li>
+        </ul>
+    </div>
 </body>
 </html>
