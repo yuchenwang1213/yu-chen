@@ -1,36 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Art by yuchen</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    img {
+      width: 300px;
+      margin: 20px auto;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      margin: 20px auto;
+    }
+    input {
+      margin: 5px 0;
+      padding: 5px;
+      width: 200px;
+    }
+    h1, h2 {
+      margin-top: 30px;
+    }
+    iframe {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- 页面主标题 -->
+
   <h1>Art by yuchen</h1>
 
-  <!-- 图片展示 -->
-  <img src="Romy.jpeg" width="300" alt="Romy's photo" />
+  <!-- 图片 -->
+  <img src="Romy.jpeg" alt="Romy's photo">
 
-  <!-- 表单部分 -->
+  <!-- 表单 -->
   <h2>Please fill in the form:</h2>
-  <form action="#" method="post">
-    First name: <input type="text" name="firstname"><br><br>
-    Last name: <input type="text" name="lastname"><br><br>
-    Password: <input type="password" name="pw"><br><br>
-    Birthdate: <input type="date" name="d"><br><br>
-    Email: <input type="email" name="em"><br><br>
+  <form>
+    First name: <br>
+    <input type="text" name="firstname"><br>
+
+    Last name: <br>
+    <input type="text" name="lastname"><br>
+
+    Password: <br>
+    <input type="password" name="pw"><br>
+
+    Birthdate: <br>
+    <input type="date" name="d"><br>
+
+    Email: <br>
+    <input type="email" name="em"><br><br>
+
     <input type="submit" value="Submit">
   </form>
 
-  <!-- 嵌入你提供的短视频 -->
+  <!-- 嵌入视频 -->
   <h2>Watch my favorite video:</h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/dFg8Nu2X5Mo"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
+  <iframe width="315" height="560" 
+    src="https://www.youtube.com/embed/dFg8Nu2X5Mo" 
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
+
 </body>
 </html>
