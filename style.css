@@ -1,63 +1,49 @@
 body {
-    background: #f0f4f8;
-    font-family: "Segoe UI", sans-serif;
+    background-color: #f0f4fa;
+    font-family: Arial, sans-serif;
+    color: #333;
     margin: 20px;
 }
 
 h1 {
-    color: #3b5998;
-    letter-spacing: 4px;
+    color: #003366;
     text-align: center;
-    text-transform: uppercase;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.section {
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #b3d9ff;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
+    color: #0077b6;
     font-style: italic;
-    color: #2c3e50;
     margin-bottom: 10px;
 }
 
-p {
-    color: #34495e;
-    line-height: 1.6;
-}
-
-.container {
-    display: flex;
-    gap: 30px;
-}
-
-#cyan {
-    background: #d0f0f8;
-    padding: 20px;
-    width: 40%;
-    border-radius: 10px;
-}
-
-#green {
-    background: #d5f5e3;
-    padding: 20px;
-    width: 40%;
-    border-radius: 10px;
-}
-
 .highlighted {
-    background: #ffeaa7;
+    background-color: #ffeeba;
     padding: 10px;
     border-radius: 5px;
+    margin: 10px 0;
 }
 
 ul {
-    padding-left: 20px;
+    margin-left: 40px;
+    line-height: 1.6;
 }
 
 img {
-    display: block;
-    margin: 30px auto;
     max-width: 100%;
-    height: auto;
+    display: block;
+    margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
