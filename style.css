@@ -1,49 +1,44 @@
-/* 背景和基础样式 */
 body {
-    background-color: #f4f8fb; /* 淡蓝灰色背景 */
-    font-family: Arial, sans-serif;
-    color: #333; /* 深灰色文字，更舒服 */
-    text-align: center;
-    padding: 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
 }
 
-/* 一级标题 */
 h1 {
-    color: #004080; /* 深蓝色 */
-    font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
 }
 
-/* 二级标题斜体 */
 h2 {
-    font-style: italic;
-    color: #2e6f95;
+  font-style: italic;
 }
 
-/* 段落样式 */
 p {
-    color: #444;
-    width: 70%;
-    margin: auto;
+  color: #5d4037;
 }
 
-/* 特别高亮的段落或标题 */
+#blue-block {
+  background-color: #ccf2ff;
+  width: 30%;
+  padding: 15px;
+  float: left;
+}
+
+#green-block {
+  background-color: #2e7d32;
+  width: 30%;
+  padding: 15px;
+  float: left;
+  color: #f0f0f0;
+}
+
+#orange-block {
+  background-color: #ffcc80;
+  width: 30%;
+  padding: 15px;
+  float: left;
+}
+
 .highlighted {
-    background-color: #fff3cd; /* 柔和黄色高亮 */
-    padding: 8px;
-    border-radius: 5px;
-}
-
-/* 列表样式 */
-ul {
-    list-style-type: square;
-    text-align: left;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* 图片样式 */
-img {
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  background-color: #ffe082;
+  padding: 5px;
 }
