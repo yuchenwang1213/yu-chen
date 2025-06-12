@@ -26,25 +26,21 @@ h1 {
   padding: 20px;
   width: 300px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 15px;
+  margin: 0 auto;
   border-radius: 10px;
 }
 
 h2 {
   color: #333;
-  margin-bottom: 10px;
 }
 
-p,
-li {
+p, li {
   color: #555;
   text-align: left;
 }
@@ -52,5 +48,31 @@ li {
 ul {
   text-align: left;
   padding-left: 20px;
-  margin: 10px 0 0 0;
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.link-paragraph {
+  margin: 30px;
+  font-size: 1em;
+}
+
+a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
