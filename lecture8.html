@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lecture 8</title>
+</head>
+<body>
+  <h1 id="heading">The heading</h1>
+  <p id="p1">A paragraph</p>
+  <p id="p2">Another paragraph</p>
+  <p id="p3">Yet another paragraph</p>
+  
+  <input type="button" value="Click me!" id="mybutton">
+  
+  <script>
+    document.getElementById("mybutton").onclick = function() {
+      document.getElementById("heading").innerHTML = "You clicked the button!";
+    };
+  </script>
+</body>
+</html>
