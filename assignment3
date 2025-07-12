@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Muse Album Shop</title>
+</head>
+<body>
+  <h1>Muse Album Shop</h1>
+
+  <div>
+    <h3 id="album1" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">Origin of Symmetry</h3>
+    <button onclick="addToCart(this, 15)">Add to Cart ($15)</button>
+  </div>
+
+  <div>
+    <h3 id="album2" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">Absolution</h3>
+    <button onclick="addToCart(this, 18)">Add to Cart ($18)</button>
+  </div>
+
+  <div>
+    <h3 id="album3" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">Black Holes and Revelations</h3>
+    <button onclick="addToCart(this, 20)">Add to Cart ($20)</button>
+  </div>
+
+  <h3>Cart Total: $<span id="cartTotal">0</span></h3>
+
+  <input type="number" id="paymentAmount" placeholder="Enter amount">
+  <button onclick="confirmPurchase()">Confirm Purchase</button>
+
+  <p id="message"></p>
+
+  <script>
+    let albumDescriptions = {
+      album1: "Origin of Symmetry (2001) is Muse's second studio album, featuring hits like 'Plug In Baby' and 'New Born'.",
+      album2: "Absolution (2003) is Muse's third album, known for 'Time Is Running Out' and 'Hysteria'.",
+      album3: "Black Holes and Revelations (2006) brought Muse global fame with tracks like 'Supermassive Black Hole'."
+    };
+
+    let originalTitles = {
+      album1: "Origin of Symmetry",
+      album2: "Absolution",
+      album3: "Black Holes and Revelations"
+    };
+
+    let cartTotal = 0;
+
+    function showDetails(element) {
+      element.textContent = albumDescriptions[element.id];
+    }
+
+    function hideDetails(element) {
+      element.textContent = originalTitles[element.id];
+    }
+
+    function addToCart(button, price) {
+      cartTotal += price;
+      document.getElementById("cartTotal").textContent = cartTotal;
+      button.disabled = true;
+    }
+
+    function confirmPurchase() {
+      let amount = parseFloat(document.getElementById("paymentAmount").value);
+      let message = document.getElementById("message");
+
+      if (cartTotal === 0) {
+        message.textContent = "Error: Your cart is empty!";
+      } else if (amount !== cartTotal) {
+        message.textContent = "Error: Incorrect amount!";
+      } else {
+        message.textContent = "Success! Thank you for your purchase.";
+      }
+    }
+  </script>
+</body>
+</html>
