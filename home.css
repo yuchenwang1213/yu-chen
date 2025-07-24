@@ -362,6 +362,7 @@ h1, h2, h3 {
   padding: 30px 40px 10px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 .footer-content {
