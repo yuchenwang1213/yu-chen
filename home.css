@@ -357,6 +357,7 @@ h1, h2, h3 {
 
 /* Footer */
 .site-footer {
+  width: 100%;
   background-color:#ff6600;
   color: #fff;
   padding: 30px 40px 10px;
