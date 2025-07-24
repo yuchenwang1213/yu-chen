@@ -25,7 +25,7 @@ h1, h2, h3 {
 /* Header */
 .main-header {
   height: 100vh;
-  background-image: url('images/game.jpg');
+  background-image: url('images/soccer.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,22 +36,22 @@ h1, h2, h3 {
 
 /* Navigation */
 .nav-bar {
-  height: 100px;               /* Fixed navbar height */
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
   background: rgba(0, 0, 0, 0.6);
-  position: relative;         /* so z-index works */
-  overflow: visible;          /* allow logo overflow */
+  position: relative;
+  overflow: visible;
   z-index: 5;
 }
 
 .logo img {
   height:150px;
   width: auto;
-  margin-top: 20px;          
-  margin-bottom: 10px;   
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .main-nav ul {
@@ -74,7 +74,7 @@ h1, h2, h3 {
 
 /* Container */
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 60px auto;
   padding: 0 5%;
   text-align: center;
@@ -85,7 +85,7 @@ h1, h2, h3 {
   margin-bottom: 20px;
   color: #ff6600;
   text-transform: uppercase;
-  font-weight: 800px;
+  font-weight: 800;
   line-height: 1.1;
 }
 
@@ -93,53 +93,14 @@ h1, h2, h3 {
   font-size: 1.1em;
   margin-bottom: 15px;
   color: #ccc;
- }
-
-/* Explore Section - Horizontal Cards */
-.explore {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.explore .card {
-  width: 200px;
-  background-color: #121212;
-  border: 2px solid #0ff;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.explore .card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #0ff;
-}
-
-.explore .card-text {
-  padding: 10px;
-}
-
-.explore .card-text h3 {
-  color: #0ff;
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-.explore .card-text p {
-  color: #88dfff;
-  font-size: 0.9rem;
 }
 
 /* Cards Container Section and Grid */
-.cards-section{
+.cards-section {
   width:100%;
   background-color: black;
 }
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 160px);
@@ -190,11 +151,10 @@ h1, h2, h3 {
 
 .cta-block h3 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-weight: 400;
   color: #0ff;
 }
 
@@ -204,7 +164,6 @@ h1, h2, h3 {
   color: white;
   max-width: 220px;
   line-height: 1.2;
-
 }
 
 .cta-button {
@@ -224,7 +183,7 @@ h1, h2, h3 {
 .cta-button:hover {
   background-color: #ff6600;
   color: white;
- }
+}
 
 /* Card Styles */
 .card {
@@ -246,7 +205,7 @@ h1, h2, h3 {
 .card img {
   width: 100%;
   height: 160px;
-  object-fit: cover; /* or try contain */
+  object-fit: cover;
   border-bottom: 1.5px solid #0ff;
 }
 
@@ -333,9 +292,9 @@ h1, h2, h3 {
   opacity: 0.5;
 }
 
- .video-wrapper {
+.video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -362,7 +321,7 @@ h1, h2, h3 {
 .cta-button-wrapper {
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 5 em;
+  margin-bottom: 5em;
   width: 1200px;
 }
 
@@ -378,7 +337,8 @@ h1, h2, h3 {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
- width: 100%;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .game-news-button:hover {
@@ -388,11 +348,12 @@ h1, h2, h3 {
 
 /* Footer */
 .site-footer {
-  background-color:#ff6600;
+  background-color: #ff6600;
   color: #fff;
   padding: 30px 40px 10px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 .footer-content {
@@ -402,6 +363,8 @@ h1, h2, h3 {
   flex-wrap: wrap;
   border-bottom: 1px solid #333;
   padding-bottom: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-nav a {
@@ -440,50 +403,8 @@ h1, h2, h3 {
 }
 
 .footer-bottom {
-  text-align: left; 
+  text-align: left;
   color: white;
   margin-top: 20px;
   font-size: 0.85rem;
-}
-.cta-button-wrapper {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 5em;    
-  width: 1200px;
-}
-
-.game-news-button {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 10px 28px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.1s ease, color 0.1s ease;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  width: fit-content;     
-  margin: 0 auto;         
-}
-
-.site-footer {
-  background-color:#ff6600;
-  color: #fff;
-  padding: 30px 40px 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  width: 100%;             
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #333;
-  padding-bottom: 15px;
-  max-width: 1200px;       
-  margin: 0 auto;          
 }
