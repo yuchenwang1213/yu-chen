@@ -25,7 +25,7 @@ h1, h2, h3 {
 /* Header */
 .main-header {
   height: 100vh;
-  background-image: url('images/soccer.jpeg');
+  background-image: url('images/game.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
